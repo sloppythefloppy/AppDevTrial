@@ -1,0 +1,224 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+
+
+@font-face {
+    font-family: 'Raleway';
+    font-weight: 100;
+    font-style: normal;
+    src: local('Raleway Thin'),
+         local('Raleway-100'),
+         url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-100/Raleway-100.woff2') format('woff2'),
+         url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-100/Raleway-100.woff') format('woff'),
+         url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-100/Raleway-100.tff') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Raleway';
+    font-weight: 200;
+    font-style: normal;
+    src: local('Raleway ExtraLight'),
+         local('Raleway-200'),
+         url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-200/Raleway-200.woff2') format('woff2'),
+        url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-200/Raleway-200.woff') format('woff'),
+        url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-200/Raleway-200.tff') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-style: normal;
+    src: local('Raleway Light'),
+         local('Raleway-300'),
+         url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-300/Raleway-300.woff2') format('woff2'),
+         url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-300/Raleway-300.woff') format('woff'),
+         url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-300/Raleway-300.tff') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Raleway'),
+         local('Raleway-regular'),
+         url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-regular/Raleway-regular.woff2') format('woff2'),
+         url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-regular/Raleway-regular.woff') format('woff'),
+         url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-regular/Raleway-regular.tff') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-style: normal;
+    src: local('Raleway Medium'),
+         local('Raleway-500'),
+         url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-500/Raleway-500.woff2') format('woff2'),
+         url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-500/Raleway-500.woff') format('woff'),
+         url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-500/Raleway-500.tff') format('truetype');
+  }
+  
+@font-face {
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-style: normal;
+    src: local('Raleway SemiBold'),
+        local('Raleway-600'),
+        url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-600/Raleway-600.woff2') format('woff2'),
+        url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-600/Raleway-600.woff') format('woff'),
+        url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-600/Raleway-600.tff') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-style: normal;
+    src: local('Raleway Bold'),
+         local('Raleway-700'),
+         url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-700/Raleway-700.woff2') format('woff2'),
+         url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-700/Raleway-700.woff') format('woff'),
+         url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-700/Raleway-700.tff') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-style: normal;
+  src: local('Raleway ExtraBold'),
+       local('Raleway-800'),
+       url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-800/Raleway-800.woff2') format('woff2'),
+        url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-800/Raleway-800.woff') format('woff'),
+        url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-800/Raleway-800.tff') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 900;
+  font-style: normal;
+  src: local('Raleway Black'),
+       local('Raleway-900'),
+       url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-900/Raleway-900.woff2') format('woff2'),
+       url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-900/Raleway-900.woff') format('woff'),
+       url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-900/Raleway-900.tff') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 100;
+  font-style: italic;
+  src: local('Raleway Thin Italic'),
+       local('Raleway-100italic'),
+       url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-100italic/Raleway-100italic.woff2') format('woff2'),
+        url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-100italic/Raleway-100italic.woff') format('woff'),
+        url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-100italic/Raleway-100italic.tff') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 200;
+  font-style: italic;
+  src: local('Raleway ExtraLight Italic'),
+       local('Raleway-200italic'),
+       url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-200italic/Raleway-200italic.woff2') format('woff2'),
+        url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-200italic/Raleway-200italic.woff') format('woff'),
+        url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-200italic/Raleway-200italic.tff') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-style: italic;
+  src: local('Raleway Light Italic'),
+       local('Raleway-300italic'),
+       url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-300italic/Raleway-300italic.woff2') format('woff2'),
+        url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-300italic/Raleway-300italic.woff') format('woff'),
+        url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-300italic/Raleway-300italic.tff') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-style: italic;
+  src: local('Raleway Italic'),
+       local('Raleway-italic'),
+       url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-italic/Raleway-italic.woff2') format('woff2'),
+       url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-italic/Raleway-italic.woff') format('woff'),
+       url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-italic/Raleway-italic.tff') format('truetype');
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-style: italic;
+  src: local('Raleway Medium Italic'),
+       local('Raleway-500italic'),
+       url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-500italic/Raleway-500italic.woff2') format('woff2'),
+        url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-500italic/Raleway-500italic.woff') format('woff'),
+        url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-500italic/Raleway-500italic.tff') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-style: italic;
+  src: local('Raleway SemiBold Italic'),
+       local('Raleway-600italic'),
+       url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-600italic/Raleway-600italic.woff2') format('woff2'),
+       url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-600italic/Raleway-600italic.woff') format('woff'),
+       url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-600italic/Raleway-600italic.tff') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-style: italic;
+  src: local('Raleway Bold Italic'),
+       local('Raleway-700italic'),
+       url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-700italic/Raleway-700italic.woff2') format('woff2'),
+        url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-700italic/Raleway-700italic.woff') format('woff'),
+        url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-700italic/Raleway-700italic.tff') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-style: italic;
+  src: local('Raleway ExtraBold Italic'),
+       local('Raleway-800italic'),
+       url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-800italic/Raleway-800italic.woff2') format('woff2'),
+        url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-800italic/Raleway-800italic.woff') format('woff'),
+        url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-800italic/Raleway-800italic.tff') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 900;
+  font-style: italic;
+  src: local('Raleway Black Italic'),
+       local('Raleway-900italic'),
+       url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-900italic/Raleway-900italic.woff2') format('woff2'),
+        url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-900italic/Raleway-900italic.woff') format('woff'),
+        url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-900italic/Raleway-900italic.tff') format('truetype');
+}
+
+
+  }
+  
+@font-face {
+font-family: 'Raleway';
+font-weight: 800;
+font-style: normal;
+src: local('Raleway ExtraBold'),
+        local('Raleway-800'),
+        url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-800/Raleway-800.woff2') format('woff2'),
+        url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-800/Raleway-800.woff') format('woff'),
+        url('file:///c:/Users/Gordon Chan/AppDev/src/fonts/Raleway-800/Raleway-800.tff') format('truetype');
+}
